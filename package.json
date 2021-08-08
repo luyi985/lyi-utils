@@ -21,7 +21,7 @@
   "scripts": {
     "start": "ts-node",
     "build": "tsc -p tsconfig.json",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --watch"
   },
   "repository": {
     "type": "git",
