@@ -2,19 +2,26 @@
   "name": "lyi-utils",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/src/index.js",
+  "bugs": {
+    "url": "https://github.com/luyi985/lyi-utils/issues"
+  },
+  "homepage": "https://github.com/luyi985/lyi-utils#readme",
   "exports": {
     "jobSchedule": "./dist/src/jobSchedule/index.js"
   },
   "typesVersions": {
     "*": {
-      "index.d.ts": ["dist/src/index.d.ts"]
+      "index.d.ts": [
+        "dist/src/index.d.ts"
+      ]
     }
   },
-  "type": "module",
   "scripts": {
+    "start": "ts-node",
     "build": "tsc -p tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -23,12 +30,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/luyi985/lyi-utils/issues"
-  },
-  "homepage": "https://github.com/luyi985/lyi-utils#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.24",
     "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   }
 }
