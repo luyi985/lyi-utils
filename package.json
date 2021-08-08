@@ -1,0 +1,34 @@
+{
+  "name": "lyi-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/src/index.js",
+  "exports": {
+    "jobSchedule": "./dist/src/jobSchedule/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "index.d.ts": ["dist/src/index.d.ts"]
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luyi985/lyi-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luyi985/lyi-utils/issues"
+  },
+  "homepage": "https://github.com/luyi985/lyi-utils#readme",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "typescript": "^4.3.5"
+  }
+}
